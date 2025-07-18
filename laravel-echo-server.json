@@ -1,0 +1,35 @@
+{
+	"authHost": "http://localhost:8000",
+	"clients": [{
+		"appId": "lara-id",
+		"key": "lara-key"
+	}],
+	"secret": "lara-secret-key",
+	"database": "sqlite",
+	"databaseConfig": {
+		"redis": {
+			"host": "redis",
+			"port": "6379"
+		},
+		"sqlite": {
+			"databasePath": "storage/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": true,
+	"host": null,
+	"port": "6001",
+	"protocol": "http",
+	"socketio": {},
+	"secureOptions": 67108864,
+	"ssl": false,
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
+	"apiOriginAllow": {
+		"allowCors": true,
+		"allowOrigin": "*",
+		"allowMethods": "GET, POST",
+		"allowHeaders": "Origin, Content-Type, X-Auth-Token, Authorization, X-Requested-With, Accept"
+	}
+}
